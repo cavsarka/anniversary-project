@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
           }
 
         k = getRandomInt(0, messages.length);
-        //console.log(k);
 
         // Change text
         text.innerHTML = messages[k];
