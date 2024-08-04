@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
           }
 
-        k = getRandomInt(0, messages.length-1)
+        k = getRandomInt(0, messages.length)
 
         // Change text
         text.innerHTML = messages[k];
