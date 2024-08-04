@@ -1,0 +1,90 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/Media/Ari+Chin\ Collage.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgb(236, 89, 190);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.overlay .jar {
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .overlay {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .overlay .jar {
+        order: 0;
+    }
+}
+
+.overlay h1 {
+    font-size: 60px; /* Increase font size */
+    margin-bottom: 20px;
+    margin-right: 10px;
+    line-height: 1;
+    text-align: left; /* Left justify text */
+    font-weight: 400;
+    transition: font-size 0.5s; /* Smooth transition for font size change */
+}
+
+@media (min-width: 768px) {
+    .overlay h1 {
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+}
+
+.overlay h1 strong {
+    font-size: 65px;
+}
+
+.jar img {
+    width: 225px; /* Adjust the width as needed */
+    height: auto;
+}
+
+
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(2px, 2px); }
+}
+
+.vibrate {
+    animation: vibrate 0.5s linear;
+}
+
+.small-font {
+    font-size: 24px; /* Smaller font size for "I love you" */
+    transition: font-size 0.5s; /* Smooth transition for font size change */
+}
