@@ -10,12 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
         function getRandomInt(min, max) {
-            const minCeiled = Math.ceil(min);
-            const maxFloored = Math.floor(max);
-            return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+            return Math.floor(Math.random() * (max - min)); // The maximum is exclusive and the minimum is inclusive
           }
 
-        k = getRandomInt(0, messages.length)
+        k = getRandomInt(0, messages.length);
+        //console.log(k);
 
         // Change text
         text.innerHTML = messages[k];
