@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const jar = document.getElementById('jar');
     const text = document.getElementById('text');
 
-    text.innerHTML = "balls";
-
     const messages = ["This shit cool and it work, This shit cool and it work, This shit cool and it work", "it's eefoc and it's funny, it's eefoc and it's funny, it's eefoc and it's funny"]
 
     let n = 0;
